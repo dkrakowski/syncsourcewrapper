@@ -1,0 +1,7 @@
+DB_SERVER=localhost
+DB_NAME=myDataBase
+DB_LOGIN=root
+DB_PASSWORD=
+LOG_FILE_PATH=./log.txt
+LOG_LEVEL=all
+CONSOLE_LOG_PRINT=true
