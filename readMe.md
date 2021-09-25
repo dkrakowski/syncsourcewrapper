@@ -1,14 +1,14 @@
 ReadMe and instruction for syncSourceWrapper module
 
 ## Base information:
-*Use node.js in v10.x \  
+*Use node.js in v10.x   
 *Use  sync-mysql package to communication with DB ([sync-mysql pacakge](https://www.npmjs.com/package/sync-mysql))
 *Provide only sync communication with MySQL DB
-*Log data  with easy-loger ([easy-loger package](https://www.npmjs.com/package/easy-loger))
+*Package will not provide any loger mechanism
+
 
 ### Wht is mySQLWrapper?
 mySQLWrapper is a light  module to run sql query on MySQL database. Module provide two methods getter and setter. Methods getter should use for all SELECT type statement and return selected rows. Methods setter should use for all UPDATE or INSERT type statmenet and return id of upated or insert row.
-
 
 ### How to run SQL query
 
@@ -37,3 +37,4 @@ Version | Description
 --------|------------  
 1.0.0   | Initial version
 2.0.0   | Fix problem with auto close db connection, delete logger from package, add affected rows number in setter function, add close connection method
+2.0.1   | Fix problem with log creating. Now log is not auto crete in case of DB error.

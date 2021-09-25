@@ -24,7 +24,6 @@ class dbConnection {
             var stmt = this.connection.query(query, values);
             var result = {status: 200, selectRows: stmt};
         }catch (e) {
-            log.createLog(e, "error")
             var result  = {status: 500, message: e};
         }
 
@@ -36,7 +35,6 @@ class dbConnection {
             var stmt = this.connection.query(query, values);
             var result = {status: 200, insertRowId: stmt.insertId, affectedRowsNumber: stmt.affectedRows};
         }catch (e) {
-            log.createLog(e, "error");
             var result = {status: 500, message: e};
         }
 
